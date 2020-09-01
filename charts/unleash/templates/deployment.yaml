@@ -93,11 +93,16 @@ spec:
         {{- with .Values.extraContainers }}
         {{- tpl . $ | nindent 8 }}
         {{- end }}
-      {{- if .Values.configMaps }}
+      {{- if or .Values.configMaps .Values.extraVolumes }}
       volumes:
+        {{- if .Values.configMaps }}
         - name: config-dir
           configMap:
             name: {{ include "unleash.fullname" . }}
+        {{- end }}
+        {{- with .Values.extraVolumes }}
+        {{- tpl . $ | nindent 8 }}
+        {{- end }}
       {{- end }}
 
       {{- with .Values.nodeSelector }}
