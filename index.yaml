@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  unleash:
+  - apiVersion: v2
+    appVersion: 3.2.31
+    created: "2020-09-01T11:40:26.341386212Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.5.0
+    description: Unleash is a open source feature flag & toggle system, that gives
+      you a great overview over all feature toggles across all your applications and
+      services.
+    digest: 8ada1b280d6c3bef924820e1767d38ef3061748b234f452afe08e8b3cfc2c2a9
+    home: https://github.com/Appergine/helm-charts
+    maintainers:
+    - name: jose-appergine
+    name: unleash
+    urls:
+    - https://github.com/Appergine/helm-charts/releases/download/unleash-0.0.2/unleash-0.0.2.tgz
+    version: 0.0.2
+generated: "2020-09-01T11:40:26.126735231Z"
