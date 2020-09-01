@@ -2,11 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-#affinity: {}
+# affinity: {}
 
 # This is a working example of Unleash with Google OAuth2 for the frontend and
 # a shared secret for secure communication with a backend service.
-#configMaps:
+# configMaps:
 #  index.js:
 #    mountPath: /index.js
 #    content: |-
@@ -99,13 +99,13 @@ containerPort: 4242
 # Additional sidecar containers, e. g. for a database proxy, such as Google's cloudsql-proxy
 extraContainers: ""
 
-#env:
+# env:
 #  - name: GOOGLE_CLIENT_ID
 #    value: 999999999999-999z99zz9zzzzzz99z9zz9z9zzzzzz9z.apps.googleusercontent.com
 #  - name: GOOGLE_CALLBACK_URL
 #    value: https://unleash.example.com/api/auth/callback
 
-#fullnameOverride: ""
+# fullnameOverride: ""
 
 image:
   repository: unleashorg/unleash-server
@@ -113,7 +113,7 @@ image:
   tag: 3.2.30
   pullPolicy: Always
 
-#imagePullSecrets:
+# imagePullSecrets:
 #  - name: example-bot
 
 ingress:
@@ -136,13 +136,13 @@ livenessProbe:
 #  initialDelaySeconds: 30
 #  timeoutSeconds: 10
 
-#nameOverride: ""
+# nameOverride: ""
 
-#nodeSelector: {}
+# nodeSelector: {}
 
-#podAnnotations: {}
+# podAnnotations: {}
 
-#podLabels: {}
+# podLabels: {}
 
 readinessProbe:
   enabled: false
@@ -169,7 +169,7 @@ resources: {}
 # The key value pairs under secrets will be included in a Kubernetes Secret,
 # and they will generate environment variables that use `valueFrom` to refer to
 # the secrets in the Kubernetes Secret.
-#secrets:
+# secrets:
 #  SHARED_SECRET: 999z9z9z9999zzz9
 #  GOOGLE_CLIENT_SECRET: zzzZZz9ZZzZzZzz9Z9zZZZZZ
 
@@ -177,7 +177,7 @@ service:
   type: ClusterIP
   port: 4242
 
-#tolerations: []
+# tolerations: []
 
 # VerticalPodAutoscaler
 vpa:
