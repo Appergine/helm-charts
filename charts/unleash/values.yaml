@@ -99,6 +99,9 @@ containerPort: 4242
 # Additional sidecar containers, e. g. for a database proxy, such as Google's cloudsql-proxy
 extraContainers: ""
 
+# Add additional volumes, e. g. for database proxy credentials
+extraVolumes: ""
+
 # env:
 #  - name: GOOGLE_CLIENT_ID
 #    value: 999999999999-999z99zz9zzzzzz99z9zz9z9zzzzzz9z.apps.googleusercontent.com
