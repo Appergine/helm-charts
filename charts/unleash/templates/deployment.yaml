@@ -30,7 +30,9 @@ spec:
     {{- end }}
       containers:
         - name: {{ .Chart.Name }}
+          {{- if or .Values.postgresql.enabled .Values.env .Values.secrets }}
           env:
+            {{- if .Values.postgresql.enabled }}
             - name: POSTGRESQL_PASSWORD
               valueFrom:
                 secretKeyRef:
@@ -38,6 +40,7 @@ spec:
                   key: postgresql-password
             - name: DATABASE_URL
               value: postgres://postgres:$(POSTGRESQL_PASSWORD)@{{ .Release.Name }}-postgresql/unleash
+            {{- end }}
             {{- if .Values.env }}
             {{- toYaml .Values.env | nindent 12 }}
             {{- end }}
@@ -50,6 +53,7 @@ spec:
                   key: {{ $key }}
             {{- end }}
             {{- end }}
+          {{- end }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
