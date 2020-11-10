@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-# affinity: {}
+affinity: {}
 
 # This is a working example of Unleash with Google OAuth2 for the frontend and
 # a shared secret for secure communication with a backend service.
