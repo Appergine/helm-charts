@@ -16,7 +16,7 @@ Unleash is a open source feature flag & toggle system, that gives you a great ov
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://kubernetes-charts.storage.googleapis.com/ | postgresql | 8.5.0 |
+| https://charts.helm.sh/stable/ | postgresql | 8.5.0 |
 
 ## Values
 
