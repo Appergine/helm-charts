@@ -1,6 +1,6 @@
-# Unleash
+# unleash
 
-![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![AppVersion: 3.2.31](https://img.shields.io/badge/AppVersion-3.2.31-informational?style=flat-square)
+![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![AppVersion: 3.2.31](https://img.shields.io/badge/AppVersion-3.2.31-informational?style=flat-square)
 
 Unleash is a open source feature flag & toggle system, that gives you a great overview over all feature toggles across all your applications and services.
 
